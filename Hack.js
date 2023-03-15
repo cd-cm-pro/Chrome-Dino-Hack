@@ -1,5 +1,5 @@
-// 아래 코드를 복사해서 chrome://dion 들어가서 시작할 때 아래 코드 실행하세요.
-
+// 아래 코드를 복사해서 chrome://dino 들어가서 시작할 때 아래 코드 실행하세요.
+// Copy the code below and run the code below when starting chrome://dino.
 
 
 
