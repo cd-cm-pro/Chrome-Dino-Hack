@@ -6,6 +6,8 @@
 
 document.querySelector("#buttons").innerHTML=""
 document.querySelector("#buttons").style.opacity="1"
+document.querySelector("#main-frame-error > label").style.transition="1s"
+document.querySelector("#main-frame-error > label").style.opacity=0
 var gameoverdef = Runner.instance_.gameOver
 /* input 생성 */
 var input = document.createElement('input');
