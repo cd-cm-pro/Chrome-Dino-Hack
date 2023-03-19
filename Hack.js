@@ -6,6 +6,7 @@
 
 document.querySelector("#buttons").innerHTML=""
 document.querySelector("#buttons").style.opacity="1"
+var gameoverdef = Runner.instance_.gameOver
 /* input 생성 */
 var input = document.createElement('input');
 input.type = 'text';
@@ -32,12 +33,9 @@ button.style.left="0px";
 document.querySelector("#buttons").appendChild(button);
 /* "죽기" 버튼 만들기 onclick="a = confirm("진짜로 죽겠습니까? 그러면 새로고침이 됩니다.");if(a == true){location.reload()}" */
 var button = document.createElement('button');
-button.innerHTML = '죽기';
+button.innerHTML = '무적 끄기';
 button.onclick = function() {
-  a = confirm('진짜로 죽겠습니까? 그러면 새로고침이 됩니다.');
-  if (a == true) {
-    location.reload();
-  }
+    Runner.instance_.gameOver = gameoverdef
 };
 document.querySelector("#buttons").appendChild(button);
 /* br 만들기 */
